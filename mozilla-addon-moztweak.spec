@@ -3,8 +3,8 @@ Summary(pl):	Modu³ do zmiany wielu parametrów mozilli
 Name:		mozilla-addon-moztweak
 %define		_realname	moztweak
 Version:	1.0
-Release:	1
-License:	GPL
+Release:	2
+License:	MPL
 Group:		X11/Applications/Networking
 Source0:	%{_realname}.jar
 Source1:	%{_realname}-installed-chrome.txt
