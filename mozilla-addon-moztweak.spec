@@ -16,13 +16,16 @@ BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 %define         _chromedir      %{_libdir}/mozilla/chrome
 
 %description
-Mozilla tweaks
+Mozilla tweaks - a module that supports customization of many Mozilla
+parameters that are accessible only through manual editing of
+user.prefs and other configuration files. MozTweak allows to change
+those parameters from a nice menu.
 
 %description -l pl
-Modu³ umo¿liwiaj±cy zmianê wielu parametrów mozilli, które normalnie mo¿na
-ustawiaæ tylko poprzez rêczn± edycjê plików user.prefs i innych plików
-konfiguracyjnych. MozTweak pozwala zmieniaæ te parametry za pomoc± ³adnego
-menu.
+Modu³ umo¿liwiaj±cy zmianê wielu parametrów mozilli, które normalnie
+mo¿na ustawiaæ tylko poprzez rêczn± edycjê plików user.prefs i innych
+plików konfiguracyjnych. MozTweak pozwala zmieniaæ te parametry za
+pomoc± ³adnego menu.
 
 %prep
 
