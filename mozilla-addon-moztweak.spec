@@ -2,12 +2,12 @@ Summary:	Mozilla tweaks
 Summary(pl):	Modu³ do zmiany wielu parametrów mozilli
 Name:		mozilla-addon-moztweak
 %define		_realname	moztweak
-Version:	1.0
-Release:	2
+Version:	1.2.2
+Release:	1
 License:	MPL
 Group:		X11/Applications/Networking
 Source0:	%{_realname}.jar
-# Source0-md5:	e0301ccebe567f000d5494e209fd7815
+# Source0-md5:	ddb8a929515b4f8feefeb3eb4a787bc3
 Source1:	%{_realname}-installed-chrome.txt
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
@@ -32,6 +32,7 @@ pomoc± ³adnego menu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 install -d $RPM_BUILD_ROOT%{_chromedir}
 install %{SOURCE0} $RPM_BUILD_ROOT%{_chromedir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
