@@ -1,0 +1,3 @@
+content,install,url,jar:resource:/chrome/moztweak.jar!/content/moztweak/
+locale,install,url,jar:resource:/chrome/moztweak.jar!/locale/pl-PL/moztweak/
+locale,install,url,jar:resource:/chrome/moztweak.jar!/locale/en-US/moztweak/
