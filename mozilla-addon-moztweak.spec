@@ -7,6 +7,7 @@ Release:	2
 License:	MPL
 Group:		X11/Applications/Networking
 Source0:	%{_realname}.jar
+# Source0-md5:	e0301ccebe567f000d5494e209fd7815
 Source1:	%{_realname}-installed-chrome.txt
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
