@@ -8,8 +8,9 @@ License:	MPL
 Group:		X11/Applications/Networking
 Source0:	%{_realname}.jar
 Source1:	%{_realname}-installed-chrome.txt
-BuildArch:	noarch
+Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
 %define         _chromedir      %{_libdir}/mozilla/chrome
@@ -34,14 +35,16 @@ install -d $RPM_BUILD_ROOT%{_chromedir}
 install %{SOURCE0} $RPM_BUILD_ROOT%{_chromedir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %post
+umask 022
 cat %{_chromedir}/*-installed-chrome.txt >%{_chromedir}/installed-chrome.txt
 
 %postun
+umask 022
 cat %{_chromedir}/*-installed-chrome.txt >%{_chromedir}/installed-chrome.txt
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
