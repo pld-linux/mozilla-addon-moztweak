@@ -16,8 +16,8 @@ Requires(post,postun):	mozilla >= 1.7.3-3
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
 # Seems to fix the "Preferences" problems. Does moztweak use some Java
-# classes from tabbrowser ?
-Requires:	mozilla-addon-tabbrowser
+# classes from tabextentions ?
+Requires:	mozilla-addon-tabextentions
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
