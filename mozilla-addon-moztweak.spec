@@ -19,7 +19,7 @@ Requires:	mozilla >= 1.0-7
 # classes from tabextensions ?
 Requires:	mozilla-addon-tabextensions
 BuildArch:	noarch
-BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_chromedir	%{_datadir}/mozilla/chrome
 
