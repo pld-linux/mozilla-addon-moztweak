@@ -6,7 +6,7 @@ Summary(pl):	Modu³ do zmiany wielu parametrów mozilli
 Name:		mozilla-addon-moztweak
 %define		_realname	moztweak
 Version:	1.2.2
-Release:	3
+Release:	4
 License:	MPL
 Group:		X11/Applications/Networking
 Source0:	%{_realname}.jar
@@ -15,6 +15,9 @@ Source1:	%{_realname}-installed-chrome.txt
 Requires(post,postun):	mozilla >= 1.7.3-3
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
+# Seems to fix the "Preferences" problems. Does moztweak use some Java
+# classes from tabbrowser ?
+Requires:	mozilla-addon-tabbrowser
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
