@@ -12,9 +12,9 @@ Group:		X11/Applications/Networking
 Source0:	%{_realname}.jar
 # Source0-md5:	ddb8a929515b4f8feefeb3eb4a787bc3
 Source1:	%{_realname}-installed-chrome.txt
-Requires(post,postun):	mozilla >= 1.7.3-3
+Requires(post,postun):	mozilla >= 5:1.7.3-3
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.0-7
+Requires:	mozilla >= 2:1.0-7
 # Seems to fix the "Preferences" problems. Does moztweak use some Java
 # classes from tabextensions ?
 Requires:	mozilla-addon-tabextensions
