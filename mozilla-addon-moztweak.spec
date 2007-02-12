@@ -2,7 +2,7 @@
 # TODO: check some "Preferences" problems related to this addon
 #
 Summary:	Mozilla tweaks
-Summary(pl):	Modu³ do zmiany wielu parametrów mozilli
+Summary(pl.UTF-8):   ModuÅ‚ do zmiany wielu parametrÃ³w mozilli
 Name:		mozilla-addon-moztweak
 %define		_realname	moztweak
 Version:	1.2.2
@@ -29,11 +29,11 @@ parameters that are accessible only through manual editing of
 user.prefs and other configuration files. MozTweak allows to change
 those parameters from a nice menu.
 
-%description -l pl
-Modu³ umo¿liwiaj±cy zmianê wielu parametrów mozilli, które normalnie
-mo¿na ustawiaæ tylko poprzez rêczn± edycjê plików user.prefs i innych
-plików konfiguracyjnych. MozTweak pozwala zmieniaæ te parametry za
-pomoc± ³adnego menu.
+%description -l pl.UTF-8
+ModuÅ‚ umoÅ¼liwiajÄ…cy zmianÄ™ wielu parametrÃ³w mozilli, ktÃ³re normalnie
+moÅ¼na ustawiaÄ‡ tylko poprzez rÄ™cznÄ… edycjÄ™ plikÃ³w user.prefs i innych
+plikÃ³w konfiguracyjnych. MozTweak pozwala zmieniaÄ‡ te parametry za
+pomocÄ… Å‚adnego menu.
 
 %prep
 
