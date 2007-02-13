@@ -2,7 +2,7 @@
 # TODO: check some "Preferences" problems related to this addon
 #
 Summary:	Mozilla tweaks
-Summary(pl.UTF-8):   Moduł do zmiany wielu parametrów mozilli
+Summary(pl.UTF-8):	Moduł do zmiany wielu parametrów mozilli
 Name:		mozilla-addon-moztweak
 %define		_realname	moztweak
 Version:	1.2.2
