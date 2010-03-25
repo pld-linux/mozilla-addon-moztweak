@@ -1,10 +1,10 @@
 #
 # TODO: check some "Preferences" problems related to this addon
 #
+%define		_realname	moztweak
 Summary:	Mozilla tweaks
 Summary(pl.UTF-8):	Moduł do zmiany wielu parametrów mozilli
 Name:		mozilla-addon-moztweak
-%define		_realname	moztweak
 Version:	1.2.2
 Release:	5
 License:	MPL
@@ -48,10 +48,12 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/mozilla-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/mozilla-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/mozilla-chrome+xpcom-generate
+[ ! -x %{_sbindir}/mozilla-chrome+xpcom-generate ] || %{_sbindir}/mozilla-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
